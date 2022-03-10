@@ -36,11 +36,12 @@ def make_anneal(Seq, direction, Tm):
     return Primer, mt.Tm_NN(Primer, nn_table=Tm_Opt, check=False)
 
 
-def User_Assebmly(Parts, Tm_target):
+def User_Assebmly(Parts, Tm_target, User_Overhangs):
     '''design a user assembly based on parts 
     Tm_target is the TM used as a target to design primers 
     if Tm_target == 0 specified primer sequences will be used as a reference
-    if no primer sequence is input a Tm_target is necessary   '''
+    if no primer sequence is input a Tm_target is necessary
+    User_Overhangs is the dictionnary storing the user-defined overhangs'''
     #finds the average metling temp of the available primers (this will facilitate PCRs)
     Tms=[]
     for part in Parts:
