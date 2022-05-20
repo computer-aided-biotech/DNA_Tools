@@ -1,0 +1,17 @@
+source,target,volume,reuseTips,type,pipette,tipType,bottomTouch,liquidLevelDetection
+9:A3,10:A1,12.5,False,pipetting,1-Channel 200uL (Sartorius),Sartorius Tips (0.5-200uL),TRUE,TRUE
+9:B3,10:A1,12.5,False,pipetting,1-Channel 200uL (Sartorius),Sartorius Tips (0.5-200uL),TRUE,TRUE
+9:C3,10:B1,12.5,False,pipetting,1-Channel 200uL (Sartorius),Sartorius Tips (0.5-200uL),TRUE,TRUE
+9:D3,10:B1,12.5,False,pipetting,1-Channel 200uL (Sartorius),Sartorius Tips (0.5-200uL),TRUE,TRUE
+9:A4,10:C1,12.5,False,pipetting,1-Channel 200uL (Sartorius),Sartorius Tips (0.5-200uL),TRUE,TRUE
+9:B4,10:C1,12.5,False,pipetting,1-Channel 200uL (Sartorius),Sartorius Tips (0.5-200uL),TRUE,TRUE
+9:C4,10:D1,12.5,False,pipetting,1-Channel 200uL (Sartorius),Sartorius Tips (0.5-200uL),TRUE,TRUE
+9:D4,10:D1,12.5,False,pipetting,1-Channel 200uL (Sartorius),Sartorius Tips (0.5-200uL),TRUE,TRUE
+9:A2,10:E1,12.5,False,pipetting,1-Channel 200uL (Sartorius),Sartorius Tips (0.5-200uL),TRUE,TRUE
+9:B2,10:E1,12.5,False,pipetting,1-Channel 200uL (Sartorius),Sartorius Tips (0.5-200uL),TRUE,TRUE
+9:C2,10:F1,12.5,False,pipetting,1-Channel 200uL (Sartorius),Sartorius Tips (0.5-200uL),TRUE,TRUE
+9:D2,10:F1,12.5,False,pipetting,1-Channel 200uL (Sartorius),Sartorius Tips (0.5-200uL),TRUE,TRUE
+9:E1,10:G1,12.5,False,pipetting,1-Channel 200uL (Sartorius),Sartorius Tips (0.5-200uL),TRUE,TRUE
+9:F1,10:G1,12.5,False,pipetting,1-Channel 200uL (Sartorius),Sartorius Tips (0.5-200uL),TRUE,TRUE
+9:G1,10:H1,12.5,False,pipetting,1-Channel 200uL (Sartorius),Sartorius Tips (0.5-200uL),TRUE,TRUE
+9:H1,10:H1,12.5,False,pipetting,1-Channel 200uL (Sartorius),Sartorius Tips (0.5-200uL),TRUE,TRUE

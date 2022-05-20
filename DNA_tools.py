@@ -1,3 +1,5 @@
+from matplotlib import pyplot as plt
+import numpy as np
 from Bio.SeqUtils import MeltingTemp as mt
 #https://biopython.org/docs/1.75/api/Bio.SeqUtils.MeltingTemp.html
 Breslauer= mt.DNA_NN1
@@ -96,3 +98,30 @@ def User_Assebmly(Parts, Tm_target, User_Overhangs):
             part['Primer_up']= Over_hang_right + part['Primer_up']
             part['Primer_down']= Over_hang_left + part['Primer_down']
     return Parts
+
+
+def run_gel(Sizes, Ladder, Names=[]):
+    '''Draws a gel given expected size of the bands, 
+    a ladder (a list with the sizes within the ladder)
+    if the names are provided, will label the lanes'''
+    fig, ax = plt.subplots(figsize=(15,5))
+   # ax.set_yscale('symlog')
+    x_pos=5
+
+    for lane in range(len(Sizes)):
+        #place a ladder every 8 bands
+        if lane%8 ==0:
+            ax.hlines(y= [np.log10(l) for l in Ladder], xmin=[x_pos for i in Ladder], xmax=[x_pos + 6 for i in Ladder],
+                      linewidth=[3,3,3,3,3,6,3,3,3,1], color='r')
+            x_pos+=8   
+        #plot band
+        
+        band_size= np.log10(Sizes[lane]) #log10 add some non linearity to the plot
+        ax.hlines(y=band_size, xmin=x_pos, xmax=x_pos+6, linewidth=2, color='k')
+        
+        #annotatate band if Names provided
+        if len(Names)>0:
+            ax.annotate(Names[lane], (x_pos,band_size +0.4),rotation=60)
+        x_pos+=8
+    ax.set_ylim([-1, 1.5])
+    plt.show()
